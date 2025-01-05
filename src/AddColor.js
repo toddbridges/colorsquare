@@ -2,10 +2,6 @@ import React from 'react'
 
 const AddColor = ({ newColor, setColor }) => {
 
-    // could've called this during onChange instead of anonymous function
-    const handleChange = (e) => {
-        setColor(e.target.value);
-    }
 
   return (
     <form className='addColor' onSubmit={(e) => e.preventDefault()}>
